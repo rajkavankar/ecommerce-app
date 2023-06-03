@@ -1,0 +1,11 @@
+{
+  "name": "ecommerce-app",
+  "version": "1.0.0",
+  "description": "Full stack ecommerce application",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm run dev --prefix frontend"
+  },
+  "author": "Raj kavankar",
+  "license": "ISC"
+}
