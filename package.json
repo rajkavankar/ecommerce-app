@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Full stack ecommerce application",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "client": "npm run dev --prefix frontend"
+    "client": "npm run dev --prefix frontend",
+    "testClient": "npm run test --prefix frontend",
+    "clientCoverage": "npm run coverage --prefix frontend"
   },
   "author": "Raj kavankar",
   "license": "ISC"
