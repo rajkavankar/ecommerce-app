@@ -5,10 +5,29 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node backend/server.js",
     "client": "npm run dev --prefix frontend",
     "testClient": "npm run test --prefix frontend",
-    "clientCoverage": "npm run coverage --prefix frontend"
+    "clientCoverage": "npm run coverage --prefix frontend",
+    "server": "nodemon backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/utils/seeders.js -i",
+    "data:destroy": "node backend/utils/seeders.js -d"
   },
   "author": "Raj kavankar",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.0",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.1.4",
+    "nodemon": "^2.0.22"
+  }
 }
