@@ -4,9 +4,9 @@ import { Outlet } from "react-router-dom"
 
 const App = () => {
   return (
-    <div className=''>
+    <div className='bg-slate-100'>
       <Header brand='Estore' />
-      <main className='container mx-auto min-h-[75vh] py-8  bg-slate-100'>
+      <main className='container mx-auto min-h-[75vh] w-full   py-8'>
         <Outlet />
       </main>
       <Footer />
